@@ -1,0 +1,5 @@
+{
+    "_moduleAliases": {
+        "willcore.ui": "test/moduleContainer/willCoreModules.js"
+    }
+}
