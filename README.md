@@ -6,9 +6,6 @@
 </p>
 
 
-## Index
-
-
 ## Overview
 
 WillCore.UI core is a framework that is intended to be the foundation for client-side framework built for willcore.server. It brings all the functionality of willcore.core to the front-end and introduces functionality such as lazy loaded front-end assignables. It is written with the willcore.ui framework in mind.
