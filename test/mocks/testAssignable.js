@@ -1,4 +1,4 @@
-const coreUIAssignable = require("../../server/coreUIAssignable.js");
+const coreUIAssignable = require("../../server/assignables/coreUIAssignable.js");
 
 class testAssignable extends coreUIAssignable{
     constructor(){
