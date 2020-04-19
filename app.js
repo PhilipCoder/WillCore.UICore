@@ -1,5 +1,5 @@
 let init = (willcore) => {
-    willcore.test;
+    willcore.one.test;
 };
 
 export { init };

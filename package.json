@@ -1,6 +1,6 @@
 {
-    "name": "willcore.uiCore",
-    "version": "1.0.0",
+    "name": "willcore.uicore",
+    "version": "1.0.2",
     "description": "Base extendable UI html framework.",
     "main": "moduleContainer/willCoreModules.js",
     "_moduleAliases": {
@@ -13,5 +13,24 @@
         "chai": "^4.2.0",
         "mocha": "^7.1.1",
         "module-alias": "^2.2.2"
-      }
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PhilipCoder/willCore.UICore.git"
+      },
+      "author": "Philip Schoeman",
+      "license": "LGPL-2.1-only",
+      "bugs": {
+        "url": "https://github.com/PhilipCoder/willCore.UICore/issues"
+      },
+      "homepage": "https://github.com/PhilipCoder/willCore.UICore#readme",
+      "keywords": [
+        "Proxies",
+        "Assignables"
+      ],
+      "files": [
+        "/client",
+        "/moduleContainer",
+        "/server"
+      ]
 }

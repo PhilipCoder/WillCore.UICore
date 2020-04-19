@@ -22,7 +22,7 @@ class willCoreModules {
             return target[property];
         }
         else if (property !== "then") {
-            throw `Module ${property} not found.`;
+          return null;
         }
     }
 
