@@ -16,6 +16,9 @@ class intermediateAssignableProxyHandler extends baseProxyHandler {
             this.parentProxy[this.parentProperty] = moduleContainer[property];
             return { value: intermediateProxy.new(this.parentProxy, this.parentProperty), status: true };
         }
+        else if (this.parentProxy[this.parentProperty]){
+            this.parentProxy[this.parentProperty] = property;
+        }
         throw "Invalid assignment. Only assignables can be assigned.";
     }
 

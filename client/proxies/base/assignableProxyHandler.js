@@ -54,6 +54,10 @@ class assignableProxyHandler extends baseProxyHandler {
     assignAssignableValue(target, property, value, proxy) {
         if (target[property] instanceof assignable) {
             target[property].setValue(value);
+        } else if (moduleContainer["&" + property] && moduleContainer[property].noValues && this.canAssign(proxy, moduleContainer[property])) {
+            proxy[property] = moduleContainer[property];
+            proxy[property] = value;
+            return { status: false, value: true };
         }
         return { value: false, status: false };
     }
@@ -91,7 +95,7 @@ class assignableProxyHandler extends baseProxyHandler {
         }
         else if (moduleContainer["&" + property] && moduleContainer[property].noValues && this.canAssign(proxy, moduleContainer[property])) {
             proxy[property] = moduleContainer[property];
-            return { value: target[property], status: true };
+            return { value: intermediateAssignableProxy.new(proxy, property), status: true };
         }
         else {
             return { value: intermediateAssignableProxy.new(proxy, property), status: true };
