@@ -1,5 +1,6 @@
 let init = (willcore) => {
-    willcore.ala.test.two;
+    willcore.test = ()=>"Function A";
+    willcore.test = ()=>"Function B";
 };
 
 export { init };
