@@ -74,6 +74,8 @@ class assignableProxyHandler extends baseProxyHandler {
             } else if (completionResult !== undefined) {
                 target[property] = completionResult;
                 return { value: true };
+            }else if (completionResult === undefined){
+                return  { value: true };
             }
         }
         if (target[property] instanceof assignable) {
