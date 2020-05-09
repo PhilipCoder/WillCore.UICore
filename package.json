@@ -1,6 +1,6 @@
 {
   "name": "willcore.uicore",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Base extendable UI html framework.",
   "main": "moduleContainer/willCoreModules.js",
   "_moduleAliases": {
